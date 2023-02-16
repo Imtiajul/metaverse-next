@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, MotionConfig } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { staggerContainer } from '../utils/motion';
@@ -13,8 +13,7 @@ const Explore = () => {
   const [active, setActive] = useState('world-2');
 
   return (
-    <section className={`${styles.paddings}`}
-      id="explore">
+    <section className={`${styles.paddings}`} id="explore">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -27,7 +26,7 @@ const Explore = () => {
           textStyle="text-center" />
 
         {/* explore images sections */}
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[50vh] gap-5">
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={`explore-world-${index}`}
@@ -37,7 +36,6 @@ const Explore = () => {
               handleClick={setActive}
             />
           ))}
-
         </div>
       </motion.div>
     </section>

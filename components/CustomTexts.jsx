@@ -9,8 +9,8 @@ export const TypingText = ({ title, textStyle }) => (
     variants={textContainer}
     className={`font-normal text-[14px] text-secondary-white ${textStyle}`}
   >
-    {Array.from(title).map((letter, index) => (
-      <motion.span variants={textVariant2} key={`tit le-${index}`}>
+    {Array.from(title).map((letter) => (
+      <motion.span variants={textVariant2} key={`title-${title}`}>
         {letter === ' ' ? '\u00A0' : letter}
       </motion.span>
     ))}
