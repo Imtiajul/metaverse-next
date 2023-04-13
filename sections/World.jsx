@@ -1,12 +1,11 @@
 'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import styles from "../styles";
-import { staggerContainer, fadeIn } from "../utils/motion";
+import styles from '../styles';
+import { staggerContainer, fadeIn } from '../utils/motion';
 
-import { TypingText, TitleText } from "../components";
-
+import { TypingText, TitleText } from '../components';
 
 const World = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -19,7 +18,8 @@ const World = () => (
     >
       <TypingText title="| People on the World" textStyle="text-center" />
       <TitleText title={<>Track friends around you and invite them to play together in the same world</>}
-        textStyle="text-center" />
+        textStyle="text-center"
+      />
 
       <motion.div
         variants={fadeIn('up', 'tween', 0.3, 1)}
@@ -27,7 +27,8 @@ const World = () => (
       >
         <img src="/map.png"
           alt="map"
-          className="w-full h-full object-cover" />
+          className="w-full h-full object-cover"
+        />
 
         <div className="absolute bottom-7 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
           <img src="people-01.png" alt="People" className="w-full h-full" />

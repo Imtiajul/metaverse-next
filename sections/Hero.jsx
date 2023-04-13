@@ -18,12 +18,14 @@ const Hero = () => (
       <div className="flex justify-center items-center flex-col z-10 relative">
         <motion.h1
           className={styles.heroHeading}
-          variants={textVariant(1.1)}>
+          variants={textVariant(1.1)}
+        >
           Metaverse
         </motion.h1>
         <motion.h2
           variants={textVariant(1.2)}
-          className={`${styles.heroHeading} flex justify-center items-center flex-row`}>
+          className={`${styles.heroHeading} flex justify-center items-center flex-row`}
+        >
           Ma<div className={styles.heroDText} /> ness
         </motion.h2>
       </div>
@@ -38,12 +40,13 @@ const Hero = () => (
         <div className="relative w-full -mt-[55px] pr-[40px] sm:-mt-[70px] flex justify-end z-10">
           <a href="#explore">
             <img src="/stamp.png" alt="stamp"
-              className="sm:w-[155px] sm:h-[155px] w-[100px] h-[100px] object-contain" />
+              className="sm:w-[155px] sm:h-[155px] w-[100px] h-[100px] object-contain"
+            />
           </a>
         </div>
       </motion.div>
     </motion.div>
-  </section >
+  </section>
 );
 
 export default Hero;

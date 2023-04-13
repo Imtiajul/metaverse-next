@@ -42,7 +42,6 @@ const GetStarted = () => (
               />
             </li>
           ))}
-
         </ul>
       </motion.div>
     </motion.div>

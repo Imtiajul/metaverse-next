@@ -1,9 +1,9 @@
 'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import styles from "../styles";
-import { staggerContainer, fadeIn, zoomIn } from "../utils/motion";
+import styles from '../styles';
+import { staggerContainer, fadeIn, zoomIn } from '../utils/motion';
 
 const Feedback = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -16,7 +16,8 @@ const Feedback = () => (
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.5] lg:max-w-[370px] flex flex-col justify-end gradient-05 sm:p-8 p-8 rounded-3xl border-[1px] border-[#6a6a6a] relative" >
+        className="flex-[0.5] lg:max-w-[370px] flex flex-col justify-end gradient-05 sm:p-8 p-8 rounded-3xl border-[1px] border-[#6a6a6a] relative"
+      >
         <div className="feedback-gradient" />
         <div>
           <h4 className="font-bold text-4xl text-white">
@@ -33,7 +34,8 @@ const Feedback = () => (
         <img src="/planet-09.png" alt="planet-09" className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]" />
         <motion.div
           variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute top-[3%] left-[-10%]">
+          className="lg:block hidden absolute top-[3%] left-[-10%]"
+        >
           <img src="stamp.png" alt="stamp" className="w-36 h-36 object-contain" />
         </motion.div>
       </motion.div>

@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 'use client';
 
 import { motion } from 'framer-motion';
@@ -32,7 +34,7 @@ const Footer = () => (
           </h5>
           <p className="font-normal text-sm text-white opacity-50"> Copyright © 2022 - 2023 Metaversus. All rights reserved.</p>
           <div className="flex gap-4 flex-wrap">
-            {socials.map(social => (
+            {socials.map((social) => (
               <a href="">
                 <img key={social.name} src={social.url} alt={social.name} className="w-6 h-6 object-contain" />
               </a>
