@@ -1,13 +1,16 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 'use client';
 
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 import { fadeIn } from '../utils/motion';
 
 const InsightCard = ({ imgUrl, title, subtitle, index }) => (
   <motion.div
     variants={fadeIn('up', 'spring', index * 0.5, 1)}
-    className="flex md:flex-row flex-col gap-4" >
+    className="flex md:flex-row flex-col gap-4"
+  >
     <img src={imgUrl} alt={title} className="md:w-[270px] w-full h-[250px] object-cover rounded-3xl" />
 
     <div className="w-full flex justify-between items-center">
